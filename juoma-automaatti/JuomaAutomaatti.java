@@ -1,6 +1,6 @@
 public class JuomaAutomaatti {
 
-    //Muuttujat juomien määrille
+    //Muuttujat juomien määrille // Näiden muuttujien arvojen sijoitus tulisi olla konstruktorissa, eli public JuomaAutomaatti() -nimisessä rakenteessa
     private int teetä = 50;
     private int kahvia = 50;
     private int kaakaota = 50;
@@ -14,7 +14,7 @@ public class JuomaAutomaatti {
     //Määritellään juomien valmistusmetodit kahville, teelle ja kaakaolle
     public void valmistaKahvia() {
         //Tarkistaa, että juomaa on tarpeeksi
-        if (this.kahvia >= 10) {
+        if (this.kahvia >= 10) { // Hyvä että tsekkaat että raaka-ainetta on riittävästi ennen vähennystä
             System.out.println("Odota hetki, kahvisi valmistuu...");
             this.kahvia -= 10;
             System.out.println(toString());
